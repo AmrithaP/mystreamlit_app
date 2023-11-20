@@ -1,11 +1,8 @@
 import os
 import pandas as pd
 import streamlit as st
-#from dotenv import load_dotenv
-import dotenv
+from dotenv import load_dotenv
 import matplotlib.pyplot as plt
-
-#import -r requirements.txt
 
 #from utils.b2 import B2
 
@@ -18,7 +15,7 @@ import matplotlib.pyplot as plt
 # ------------------------------------------------------
 #                        CONFIG
 # ------------------------------------------------------
-dotenv.load_dotenv()
+load_dotenv()
 
 
 # ------------------------------------------------------
@@ -27,7 +24,8 @@ dotenv.load_dotenv()
 st.write(
 '''
 ## Toxic Comment data 
-We pull data from our Github storage, was facing issues with Backblaze bucket, and render it in Streamlit using `st.dataframe()`.
+We pull data from our Github storage, was facing issues with Backblaze bucket, and have rendered it in Streamlit using `st.dataframe()`.
+Following is our data which is being used for training in the project to Predict toxicity - .
 ''')
 
 
