@@ -1,0 +1,7 @@
+# iPython
+.ipynb*
+__pycache__*
+*.pyc
+
+# app
+.env
