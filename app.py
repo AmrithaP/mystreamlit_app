@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 import streamlit as st
-import dotenv
 from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 
