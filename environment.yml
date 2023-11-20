@@ -1,4 +1,4 @@
-name: simple-streamlit
+name: simple_streamlit
 dependencies:
   - python=3.10
   - pip

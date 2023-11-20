@@ -1,17 +1,15 @@
-#import os
-#import json
-#import pickle
 import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
+#import -r requirements.txt
 
 #from utils.b2 import B2
 
 # ------------------------------------------------------
 #                      APP CONSTANTS
 # ------------------------------------------------------
-#REMOTE_DATA = './data/train.csv'
+REMOTE_DATA = './data/train.csv'
 
 
 # ------------------------------------------------------
