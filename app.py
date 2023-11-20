@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import streamlit as st
 #from dotenv import load_dotenv
+import dotenv
 import matplotlib.pyplot as plt
 
 #import -r requirements.txt
@@ -11,13 +12,13 @@ import matplotlib.pyplot as plt
 # ------------------------------------------------------
 #                      APP CONSTANTS
 # ------------------------------------------------------
-REMOTE_DATA = './data/train.csv'
+#REMOTE_DATA = './data/train.csv'
 
 
 # ------------------------------------------------------
 #                        CONFIG
 # ------------------------------------------------------
-load_dotenv()
+dotenv.load_dotenv()
 
 
 # ------------------------------------------------------
@@ -30,9 +31,7 @@ We pull data from our Github storage, was facing issues with Backblaze bucket, a
 ''')
 
 
-df_ = pd.read_csv(#os.environ['
-    REMOTE_DATA#']
-    )
+df_ = pd.read_csv(os.environ['REMOTE_DATA'])
 st.dataframe(df_)
 
 

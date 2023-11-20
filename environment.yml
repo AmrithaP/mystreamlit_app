@@ -1,6 +1,6 @@
 name: simple_streamlit
 dependencies:
-  - python=3.9
+  - python=3.10
   - pip
   - pip:
     - pandas
